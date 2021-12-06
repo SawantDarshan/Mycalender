@@ -1,0 +1,73 @@
+*{
+    transition: all 0.3s;
+}
+body {
+  /* background-image: url(https://images.unsplash.com/photo-1546350882-e1a24c0f363e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80); */
+  background: rgb(173, 0, 230);
+  background-size: contain;
+  background: linear-gradient(
+    149deg,
+    rgba(173, 0, 230, 0.5861695019804797) 0%,
+    rgba(248, 248, 248, 1) 50%,
+    rgba(100, 56, 20, 0.5301470930168943) 100%
+  );
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#root {
+}
+.text-violet {
+  color: rgba(255, 99, 71, 0.87);
+}
+.day {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgba(255, 99, 71, 0.118);
+  position: relative;
+}
+.day:hover {
+  box-shadow: 0px 0px 5px 5px rgb(141, 141, 141);
+  background-color: rgba(255, 255, 255, 0.603);
+}
+.no-cursor {
+  cursor: grab !important;
+}
+.task {
+  box-shadow: 0px 0px 10px 1px rgb(141, 141, 141);
+  padding: 1em;
+  background: white;
+  text-transform: capitalize;
+}
+.task-img {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  filter: blur(3px);
+}
+
+
+
+
+
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
